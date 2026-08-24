@@ -1,0 +1,94 @@
+CÓMO SUBIR LA PÁGINA A WORDPRESS
+=================================
+
+Contenido de este paquete
+-------------------------
+  telemedicina-wordpress.html   El código para pegar en la página.
+  imagenes/                     Las 9 capturas y el logo.
+  preview.html                  Para ver cómo queda antes de subir nada.
+                                Abrilo en el navegador; simula el header
+                                y el footer del tema alrededor del contenido.
+
+
+PASO 1 — Subir las imágenes
+---------------------------
+En el panel de WordPress: Medios > Añadir nuevo, y subí los 9 archivos
+de la carpeta "imagenes".
+
+Después abrí una cualquiera y fijate la URL del archivo. Va a ser algo así:
+
+    https://www.samisalud.com/wp-content/uploads/2026/08/app-inicio.jpg
+
+Anotá esa parte del medio: "2026/08" (o el año y mes que te muestre).
+
+
+PASO 2 — Ajustar las rutas
+--------------------------
+Abrí telemedicina-wordpress.html con el Bloc de notas y hacé
+Reemplazar todo (Ctrl+H):
+
+    Buscar:     /wp-content/uploads/telemedicina/
+    Reemplazar: /wp-content/uploads/2026/08/
+
+Usá el año y mes que anotaste en el paso 1.
+
+Son 9 reemplazos. Guardá el archivo.
+
+
+PASO 3 — Crear la página
+------------------------
+Páginas > Añadir nueva. Ponele un título (por ejemplo
+"Consultá con un médico por videollamada").
+
+  · Si usás el editor de bloques (Gutenberg):
+      Agregá un bloque "HTML personalizado" y pegá adentro TODO el
+      contenido del archivo, desde <style> hasta el final.
+
+  · Si usás Elementor:
+      Arrastrá un widget "HTML" y pegá lo mismo adentro.
+
+  · Si usás el editor clásico:
+      Cambiá a la pestaña "Texto" (no "Visual") y pegá ahí.
+      IMPORTANTE: no vuelvas a la pestaña "Visual" después de pegar,
+      porque el editor clásico reordena el HTML y rompe el diseño.
+
+Guardá como borrador y usá "Vista previa" antes de publicar.
+
+
+PASO 4 — Revisar antes de publicar
+----------------------------------
+  [ ] Se ven las 9 imágenes (si alguna sale rota, la ruta del paso 2
+      quedó mal).
+  [ ] Las preguntas frecuentes abren y cierran al hacerles clic.
+  [ ] Se ve bien en el celular.
+  [ ] Los botones de descarga llevan a Play Store y App Store.
+  [ ] Quedan 3 avisos en amarillo pendientes de completar (ver abajo).
+
+
+PENDIENTES ANTES DE PUBLICAR
+----------------------------
+En el texto hay 3 recuadros amarillos con datos que faltan. Buscá la
+palabra "todo" en el archivo, o el color amarillo en la vista previa:
+
+  1. Confirmar con asesoría legal que los términos y condiciones que el
+     socio acepta al registrarse incluyan el consentimiento para la
+     transferencia internacional de datos (Ley 25.326, art. 12).
+  2. Cuánto tiempo se conservan las consultas y quién es el responsable
+     de la base de datos.
+  3. Link a la política de privacidad completa.
+
+No publiques con los amarillos a la vista: o se completan, o se borra
+ese párrafo.
+
+
+NOTAS TÉCNICAS
+--------------
+· Todo el CSS está encerrado bajo la clase .sami-tm, así que no le pisa
+  estilos al resto del sitio.
+· La página no incluye barra de teléfono ni logo arriba: eso ya lo pone
+  el tema de SAMI.
+· Las tipografías (Barlow y Source Sans 3) se cargan desde Google Fonts.
+  Si el sitio bloquea recursos externos, se ven con la tipografía del
+  sistema y sigue funcionando igual.
+· Si algún plugin de seguridad o de caché limpia las etiquetas <style> o
+  <script>, avisale a la agencia: hay que permitirlas para esta página.

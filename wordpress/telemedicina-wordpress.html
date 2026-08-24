@@ -1,0 +1,331 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+
+.sami-tm{
+  --blue:#004B9C; --blue-dk:#00376F; --blue-lt:#E8F0F9; --blue-mid:#0F63BE;
+  --green:#66B32F; --green-dk:#4E8E22; --green-lt:#EFF8E7;
+  --paper:#fff; --wash:#F3F7FA; --line:#DCE5EC; --line-2:#C6D4E1;
+  --ink:#15283A; --ink-2:#516475; --ink-3:#8496A5;
+  --todo:#B07715; --todo-bg:#FCF3DE; --todo-line:#E3BC63;
+  --alert:#C0392B; --alert-bg:#FDF0EE;
+  --d:'Barlow',system-ui,sans-serif; --b:'Source Sans 3',system-ui,sans-serif;
+}.sami-tm *{box-sizing:border-box}.sami-tm{scroll-behavior:smooth}.sami-tm{margin:0;background:var(--paper);color:var(--ink);font-family:var(--b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}.sami-tm img{max-width:100%}.sami-tm .c{max-width:1140px;margin:0 auto;padding:0 26px}.sami-tm h2{font-family:var(--d);font-weight:700;text-transform:uppercase;letter-spacing:.005em;
+  font-size:clamp(25px,3.4vw,36px);line-height:1.08;color:var(--blue);margin:0 0 14px}.sami-tm h3{font-family:var(--d);font-weight:600;text-transform:uppercase;font-size:19px;line-height:1.2;margin:0 0 8px;color:var(--ink)}.sami-tm .kicker{font-family:var(--d);font-weight:700;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green-dk);margin:0 0 9px}.sami-tm .lead{font-size:18.5px;color:var(--ink-2);max-width:62ch;margin:0}.sami-tm .todo{background:var(--todo-bg);border-bottom:2px solid var(--todo-line);color:var(--todo);
+  font-weight:700;padding:1px 7px;border-radius:3px;font-size:.93em;white-space:nowrap}.sami-tm .topbar .c{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.sami-tm .hero{background:linear-gradient(160deg,#F6FAFD 0%,#E8F0F9 100%);padding:60px 0 66px;overflow:hidden}.sami-tm .hero .c{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}.sami-tm .hero h1{font-family:var(--d);font-weight:800;text-transform:uppercase;font-size:clamp(32px,5.2vw,54px);
+  line-height:1.02;letter-spacing:-.012em;margin:0 0 18px;color:var(--blue)}.sami-tm .hero h1 em{font-style:normal;color:var(--green-dk);display:block}.sami-tm .hero p{font-size:19px;color:var(--ink-2);margin:0 0 28px;max-width:46ch}.sami-tm .stores{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.sami-tm .store{display:inline-flex;align-items:center;gap:11px;background:var(--green);color:#fff;text-decoration:none;
+  font-family:var(--d);font-weight:700;font-size:14.5px;letter-spacing:.09em;text-transform:uppercase;
+  padding:14px 24px;border-radius:40px;transition:background .16s,transform .16s}.sami-tm .store:hover,.sami-tm .store:focus-visible{background:var(--green-dk);transform:translateY(-1px)}.sami-tm .store.alt{background:var(--blue)}.sami-tm .store.alt:hover,.sami-tm .store.alt:focus-visible{background:var(--blue-dk)}.sami-tm .store .ic{font-size:17px}.sami-tm .microcopy{font-size:15px;color:var(--ink-3);margin:0}.sami-tm .heroart{display:flex;justify-content:center}.sami-tm .phone{position:relative;width:min(272px,80vw);background:#0E1620;border-radius:34px;padding:9px;
+  box-shadow:0 28px 54px -18px rgba(0,55,111,.42),0 2px 6px rgba(21,40,58,.12)}.sami-tm .phone .vp{position:relative;border-radius:26px;overflow:hidden;background:#fff;aspect-ratio:620/1347}.sami-tm .phone img{display:block;width:100%;height:100%;object-fit:cover}.sami-tm .phone.sm{width:min(172px,64vw);border-radius:24px;padding:6px}.sami-tm .phone.sm .vp{border-radius:19px}.sami-tm .slot{position:absolute;inset:0;background:var(--wash);display:flex;flex-direction:column;align-items:center;
+  justify-content:center;text-align:center;gap:11px;padding:28px 20px;border:2px dashed var(--line-2)}.sami-tm .slot .tag{font-family:var(--d);font-weight:700;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--todo);background:var(--todo-bg);padding:4px 9px;border-radius:3px}.sami-tm .slot p{font-size:13px;color:var(--ink-2);margin:0;line-height:1.45}.sami-tm .slot .ic{font-size:30px;color:var(--line-2);font-family:var(--d);font-weight:600}.sami-tm .alert{background:var(--alert-bg);border-top:4px solid var(--alert);padding:26px 0}.sami-tm .alert .c{display:flex;gap:18px;align-items:flex-start}.sami-tm .alert .ic{flex:none;width:42px;height:42px;border-radius:50%;background:var(--alert);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:23px}.sami-tm .alert h3{color:var(--alert);margin-bottom:5px}.sami-tm .alert p{margin:0;font-size:16.5px;color:#6D2A20}.sami-tm .alert strong{font-family:var(--d);font-weight:700;font-size:1.1em;letter-spacing:.01em}.sami-tm section{padding:66px 0}.sami-tm .sec-wash{background:var(--wash)}.sami-tm .sechead{max-width:64ch;margin-bottom:38px}.sami-tm .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line-2)}.sami-tm .tile{padding:34px 26px;text-align:center;background:#fff;border-right:1px solid var(--line-2)}.sami-tm .tile:last-child{border-right:0}.sami-tm .tile:nth-child(even){background:var(--blue);color:#fff;border-right-color:rgba(255,255,255,.2)}.sami-tm .tile:nth-child(even) h3{color:#fff}.sami-tm .tile:nth-child(even) p{color:rgba(255,255,255,.85)}.sami-tm .tile .ic{font-size:34px;margin-bottom:12px;color:var(--green);font-family:var(--d);font-weight:600;line-height:1}.sami-tm .tile:nth-child(even) .ic{color:#9BD86A}.sami-tm .tile p{font-size:15px;color:var(--ink-2);margin:0}
+@media (max-width:860px){.sami-tm .tiles{grid-template-columns:repeat(2,1fr)}.sami-tm .tile{border-bottom:1px solid var(--line-2)}.sami-tm .tile:nth-child(2n){border-right:0}}
+@media (max-width:520px){.sami-tm .tiles{grid-template-columns:1fr}.sami-tm .tile{border-right:0}}.sami-tm .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+@media (max-width:1100px){.sami-tm .steps{grid-template-columns:repeat(3,1fr);gap:34px}}
+@media (max-width:760px){.sami-tm .steps{grid-template-columns:repeat(2,1fr);gap:34px}}
+@media (max-width:540px){.sami-tm .steps{grid-template-columns:1fr}}.sami-tm .stepcard{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}.sami-tm .stepnum{width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;font-family:var(--d);
+  font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;flex:none}.sami-tm .stepcard h3{font-size:17.5px;margin:0 0 6px}.sami-tm .stepcard p{font-size:15.5px;color:var(--ink-2);margin:0}.sami-tm .chips{display:flex;flex-wrap:wrap;gap:10px}.sami-tm .chip{font-family:var(--d);font-weight:600;font-size:14px;letter-spacing:.05em;text-transform:uppercase;
+  background:#fff;border:1.5px solid var(--line-2);color:var(--ink-2);padding:10px 18px;border-radius:40px}.sami-tm .chip.q{background:var(--todo-bg);border-color:var(--todo-line);color:var(--todo)}.sami-tm .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+@media (max-width:860px){.sami-tm .split{grid-template-columns:1fr;gap:36px}.sami-tm .hero .c{grid-template-columns:1fr;gap:38px}}.sami-tm .split ul{margin:18px 0 0;padding:0;list-style:none}.sami-tm .split li{display:flex;gap:12px;margin-bottom:12px;font-size:16.5px;color:var(--ink-2)}.sami-tm .split li::before{content:'';flex:none;width:9px;height:9px;border-radius:50%;background:var(--green);margin-top:9px}.sami-tm .faq{border-top:1px solid var(--line)}.sami-tm .qa{border-bottom:1px solid var(--line)}.sami-tm .qa button{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:20px 44px 20px 0;
+  font-family:var(--d);font-weight:600;font-size:18px;color:var(--ink);position:relative;line-height:1.3}.sami-tm .qa button:hover{color:var(--blue)}.sami-tm .qa button::after{content:'+';position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  font-family:var(--d);font-weight:600;font-size:26px;color:var(--green);transition:transform .2s}.sami-tm .qa[open] button::after{content:'–'}.sami-tm .qa .a{padding:0 0 22px;font-size:16.5px;color:var(--ink-2);max-width:74ch;display:none}.sami-tm .qa[open] .a{display:block}.sami-tm .qa .a p{margin:0 0 11px}.sami-tm .qa .a p:last-child{margin:0}.sami-tm button:focus-visible,.sami-tm a:focus-visible{outline:3px solid var(--green);outline-offset:2px;border-radius:3px}.sami-tm .cta{background:var(--blue);color:#fff;padding:62px 0;text-align:center}.sami-tm .cta h2{color:#fff;margin-bottom:12px}.sami-tm .cta p{font-size:18px;color:rgba(255,255,255,.86);max-width:50ch;margin:0 auto 28px}.sami-tm .cta .stores{justify-content:center;margin-bottom:0}.sami-tm footer{background:#0F2439;color:rgba(255,255,255,.72);padding:44px 0 34px;font-size:15px}.sami-tm footer .c{display:grid;grid-template-columns:1fr 1fr 1.15fr 1fr;gap:30px}
+@media (max-width:980px){.sami-tm footer .c{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sami-tm footer .c{grid-template-columns:1fr}}.sami-tm footer h4{font-family:var(--d);font-weight:700;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);margin:0 0 12px}.sami-tm footer p{margin:0 0 8px}.sami-tm footer strong{color:#fff}.sami-tm .fnote{border-top:1px solid rgba(255,255,255,.14);margin-top:32px;padding-top:20px;font-size:13.5px;
+  color:rgba(255,255,255,.5)}
+@media (prefers-reduced-motion:reduce){.sami-tm *{transition:none!important;scroll-behavior:auto}}
+</style>
+
+<div class="sami-tm">
+<!-- HERO -->
+<div class="hero"><div class="c">
+  <div>
+    <p class="kicker">Beneficio para socios de Sami</p>
+    <h1>Un médico<em>sin salir de casa</em></h1>
+    <p>Consultá por videollamada desde tu celular, todos los días de 9 a 22 hs. Sin sala de espera, sin viaje y sin costo: está incluida en tu plan.</p>
+    <div class="stores">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.unidadcoronaria.doctorencasa.external&amp;hl=es-AR"><span class="ic">▸</span>Descargar para Android</a>
+      <a class="store alt" href="https://apps.apple.com/ar/app/doctor-en-casa-convenios/id1496459771"><span class="ic">▸</span>Descargar para iPhone</a>
+    </div>
+    <p class="microcopy">La app se llama <strong>Doctor en Casa · Convenios</strong>.</p>
+  </div>
+  <div class="heroart">
+    <div class="phone">
+      <div class="vp">
+        <img loading="lazy" src="/wp-content/uploads/telemedicina/app-inicio.jpg" alt="Pantalla principal de la app">
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!-- EMERGENCIA -->
+<div class="alert"><div class="c">
+  <div class="ic">!</div>
+  <div>
+    <h3>Esto no reemplaza una emergencia</h3>
+    <p>Si tenés dolor en el pecho, dificultad para respirar, pérdida de conocimiento o un accidente, no uses la app. Llamá a <strong>0800-333-1297</strong> o <strong>3754-7777</strong>, que es el servicio de emergencias y urgencias médicas de Sami, disponible las 24 horas.</p>
+  </div>
+</div></div>
+
+<!-- BENEFICIOS -->
+<section>
+  <div class="c">
+    <div class="sechead">
+      <p class="kicker">Por qué usarla</p>
+      <h2>Atención médica cuando la necesitás</h2>
+      <p class="lead">Pensada para las consultas que no justifican salir de casa pero tampoco pueden esperar una semana.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><div class="ic">◷</div><h3>Sin turno previo</h3><p>Pedís la consulta en el momento y te atienden en el día.</p></div>
+      <div class="tile"><div class="ic">▣</div><h3>Desde el celular</h3><p>Solo necesitás el teléfono y conexión a internet.</p></div>
+      <div class="tile"><div class="ic">≡</div><h3>Queda registrado</h3><p>Cada consulta se guarda en tu historia clínica dentro de la app.</p></div>
+      <div class="tile"><div class="ic">✦</div><h3>Sin costo</h3><p>Está incluida en tu plan. No pagás consulta ni coseguro.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO SE USA -->
+<section id="como" class="sec-wash">
+  <div class="c">
+    <div class="sechead">
+      <p class="kicker">Paso a paso</p>
+      <h2>Cómo empezar a usarla</h2>
+      <p class="lead">Se configura una sola vez. Después, cada consulta son dos toques.</p>
+    </div>
+    <div class="steps">
+
+      <div class="stepcard">
+        <div class="stepnum">1</div>
+        <div class="phone sm"><div class="vp"><img loading="lazy" src="/wp-content/uploads/telemedicina/app-01-ingreso.jpg" alt="Pantalla de ingreso de la app"></div></div>
+        <div><h3>Descargá la app</h3><p>Buscá <strong>Doctor en Casa · Convenios</strong> en Play Store o App Store, o entrá desde los botones de esta página.</p></div>
+      </div>
+
+      <div class="stepcard">
+        <div class="stepnum">2</div>
+        <div class="phone sm"><div class="vp"><img loading="lazy" src="/wp-content/uploads/telemedicina/app-02-empresa.jpg" alt="Lista de empresas con Sami Salud"></div></div>
+        <div><h3>Elegí tu empresa</h3><p>Tocá <strong>Registrate aquí</strong> y buscá <strong>Sami Salud</strong> en el listado.</p></div>
+      </div>
+
+      <div class="stepcard">
+        <div class="stepnum">3</div>
+        <div class="phone sm"><div class="vp"><img loading="lazy" src="/wp-content/uploads/telemedicina/app-03-cuenta.jpg" alt="Formulario de creación de cuenta"></div></div>
+        <div><h3>Creá tu cuenta</h3><p>Completá tu DNI, tu mail y una contraseña, y aceptá los términos y condiciones.</p></div>
+      </div>
+
+      <div class="stepcard">
+        <div class="stepnum">4</div>
+        <div class="phone sm"><div class="vp"><img loading="lazy" src="/wp-content/uploads/telemedicina/app-04-especialidad.jpg" alt="Selección de especialidad"></div></div>
+        <div><h3>Pedí tu consulta</h3><p>Tocá <strong>Sacar turno</strong> y elegí la especialidad del médico que querés que te atienda.</p></div>
+      </div>
+
+      <div class="stepcard">
+        <div class="stepnum">5</div>
+        <div class="phone sm"><div class="vp"><img loading="lazy" src="/wp-content/uploads/telemedicina/app-05-espera.jpg" alt="Sala de espera con la cantidad de personas en la fila"></div></div>
+        <div><h3>Esperá tu llamada</h3><p>Quedás en la lista de espera y la app te muestra cuántas personas hay adelante. Cuando haya un médico disponible, te llama.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ PODÉS CONSULTAR -->
+<section id="atencion">
+  <div class="c split">
+    <div>
+      <p class="kicker">Qué podés consultar</p>
+      <h2>Para qué sirve<br>y para qué no</h2>
+      <p class="lead">La videoconsulta resuelve bien los cuadros leves y el seguimiento. Para todo lo demás, seguís teniendo la cartilla y el servicio de urgencias.</p>
+      <ul>
+        <li>Resfríos, anginas, cuadros gripales y malestares generales</li>
+        <li>Consultas de seguimiento y control de tratamientos</li>
+        <li>Dudas sobre medicación o resultados de estudios</li>
+        <li>Certificados y recetas: el médico puede emitirte receta digital durante la consulta</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="margin-bottom:16px">Especialidades disponibles</h3>
+      <div class="chips">
+        <span class="chip">Clínica médica</span>
+        <span class="chip">Pediatría</span>
+      </div>
+      <p class="lead" style="font-size:15.5px;margin-top:12px;color:var(--ink-3)">En la app solo vas a ver las especialidades que en ese momento tengan un médico disponible.</p>
+      <h3 style="margin:30px 0 16px">Horarios de atención</h3>
+      <p class="lead" style="font-size:17px"><strong>Todos los días de 9 a 22 hs</strong>, incluidos sábados, domingos y feriados.</p>
+      <p class="lead" style="font-size:16px;margin-top:10px;color:var(--ink-3)">Fuera de ese horario, para una urgencia llamá al 0800-333-1297.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORIA CLÍNICA -->
+<section class="sec-wash">
+  <div class="c split">
+    <div class="heroart">
+      <div class="phone"><div class="vp"><img loading="lazy" src="/wp-content/uploads/telemedicina/app-historia-clinica.jpg" alt="Historia clínica dentro de la app"></div></div>
+    </div>
+    <div>
+      <p class="kicker">Tu historial</p>
+      <h2>Todas tus consultas en un solo lugar</h2>
+      <p class="lead">Cada videoconsulta queda guardada con la fecha, el motivo y el profesional que te atendió. Podés revisarla cuando quieras desde la solapa <strong>Historia clínica</strong>, y mostrársela a tu médico de cabecera en la próxima visita.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section>
+  <div class="c split">
+    <div>
+      <p class="kicker">Novedades</p>
+      <h2>Todo lo de Sami,<br>dentro de la app</h2>
+      <p class="lead">La solapa <strong>Noticias</strong> te abre el sitio de Sami sin salir de la aplicación. Ahí tenés las novedades para socios, la información útil, la cartilla médica y los teléfonos de contacto, sin tener que buscarlos aparte en el navegador.</p>
+    </div>
+    <div class="heroart">
+      <div class="phone"><div class="vp"><img loading="lazy" src="/wp-content/uploads/telemedicina/app-noticias.jpg" alt="Solapa Noticias dentro de la app"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="c">
+    <div class="sechead">
+      <p class="kicker">Dudas frecuentes</p>
+      <h2>Preguntas que nos hacen seguido</h2>
+    </div>
+    <div class="faq">
+
+      <details class="qa" open>
+        <summary style="list-style:none"><button type="button">¿Tiene algún costo?</button></summary>
+        <div class="a"><p>No. Como socio de Sami la videoconsulta está incluida en tu plan: no pagás la consulta ni ningún coseguro.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿En qué horarios puedo consultar?</button></summary>
+        <div class="a"><p>Todos los días de 9 a 22 hs, incluidos fines de semana y feriados. Fuera de ese horario, si es una urgencia, llamá al <strong>0800-333-1297</strong>.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">No me aparece la especialidad que busco, ¿por qué?</button></summary>
+        <div class="a"><p>El servicio tiene dos especialidades: <strong>clínica médica</strong> y <strong>pediatría</strong>. En el listado solo se muestran las que en ese momento tienen un profesional disponible, así que si no ves una de las dos es porque no hay médico atendiendo justo ahora. Volvé a intentar más tarde, siempre dentro del horario de 9 a 22 hs.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿Cuánto tengo que esperar?</button></summary>
+        <div class="a"><p>Depende de cuánta gente haya en ese momento. Mientras esperás, la app te muestra cuántas personas hay adelante tuyo en la fila. No hace falta que te quedes mirando la pantalla: te avisa cuando el médico está listo.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿Puedo cancelar el turno si ya no lo necesito?</button></summary>
+        <div class="a"><p>Sí. Mientras estás en la lista de espera vas a ver el botón <strong>Cancelar turno</strong>. La app te pide que confirmes y listo, salís de la fila. Podés volver a sacar otro turno cuando quieras.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿Puedo usarla para mis hijos o para un familiar a cargo?</button></summary>
+        <div class="a"><p>Los menores de edad no pueden crear una cuenta propia, pero sí pueden ser atendidos desde la cuenta de la madre, el padre o el adulto responsable. Ingresá con tu usuario y sacá el turno desde ahí.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿Qué necesito para que funcione la videollamada?</button></summary>
+        <div class="a"><p>Un celular con cámara y micrófono, y conexión a internet por wifi o datos. La primera vez la app te va a pedir permiso para usar la cámara y el micrófono: tenés que aceptarlo para poder hablar con el médico.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿El médico me puede recetar?</button></summary>
+        <div class="a"><p>Sí. Durante la videoconsulta el profesional puede emitirte una receta digital, con la misma validez que una receta en papel.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿Qué pasa con mis datos de salud?</button></summary>
+        <div class="a">
+          <p>Una videoconsulta es una consulta médica y se rige por las mismas reglas que una presencial:</p>
+          <p><strong>Secreto profesional.</strong> Lo que hablás con el médico está amparado por el mismo deber de confidencialidad que en el consultorio (Ley 26.529, derechos del paciente).</p>
+          <p><strong>La historia clínica es tuya.</strong> Podés consultarla desde la app cuando quieras y pedir una copia.</p>
+          <p><strong>Acceso y rectificación.</strong> La Ley 25.326 te da derecho a saber qué datos tuyos están registrados, a corregirlos si hay un error y a pedir que se supriman. Para ejercer cualquiera de estos derechos escribinos o llamanos al (011) 7079-0149.</p>
+          <p><strong>Consentimiento.</strong> Tus datos de salud solo pueden usarse para atenderte, salvo que autorices otra cosa expresamente.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿Quién más puede ver mi información?</button></summary>
+        <div class="a">
+          <p>Para funcionar, el servicio se apoya en dos proveedores de tecnología:</p>
+          <p><strong>Amazon Web Services</strong> provee los servidores donde funciona la aplicación y donde quedan guardadas tus consultas. Es la misma infraestructura que usan bancos, organismos públicos y buena parte de las empresas del país.</p>
+          <p><strong>Twilio</strong> es la plataforma que transporta la videollamada, es decir el canal por el que viajan la imagen y el audio entre vos y el médico.</p>
+          <p>Los dos son prestadores técnicos: procesan la información únicamente para que el servicio funcione y no la usan para fines propios. Tus datos no se venden, no se ceden con fines comerciales y no se comparten con anunciantes.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">¿Dónde se guardan mis datos?</button></summary>
+        <div class="a">
+          <p>Los servidores de ambos proveedores están ubicados en <strong>Estados Unidos</strong>, así que tu información se almacena y se procesa fuera del país. Es algo habitual en los servicios digitales y está contemplado por la normativa argentina de protección de datos personales.</p>
+          <p><span class="todo">verificar con asesoría legal que los términos y condiciones que el socio acepta al registrarse incluyan el consentimiento expreso para la transferencia internacional de datos sensibles (Ley 25.326, art. 12) y sumar acá la referencia</span></p>
+          <p><span class="todo">completar: cuánto tiempo se conservan las consultas, quién es el responsable de la base de datos y link a la política de privacidad completa</span></p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary style="list-style:none"><button type="button">No me anda, ¿a quién le escribo?</button></summary>
+        <div class="a">
+          <p><strong>Si es un problema técnico de la app</strong> —no podés entrar, se cierra sola, la videollamada se corta, no te llega el mail de registro— escribí a <strong>sistemas@ucmq.com</strong>. Contá qué te pasó, desde qué teléfono y a qué hora, que ayuda a resolverlo más rápido.</p>
+          <p><strong>Para cualquier otra consulta</strong> sobre tu plan o tu afiliación, escribinos por WhatsApp al <strong>+54 9 11 6375-9026</strong> o llamanos al <strong>(011) 7079-0149</strong>, de lunes a viernes de 8 a 17 hs.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta"><div class="c">
+  <h2>Descargala y probala</h2>
+  <p>Como socio de Sami ya tenés acceso. Solo falta que la instales.</p>
+  <div class="stores">
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.unidadcoronaria.doctorencasa.external&amp;hl=es-AR"><span class="ic">▸</span>Android</a>
+    <a class="store" href="https://apps.apple.com/ar/app/doctor-en-casa-convenios/id1496459771"><span class="ic">▸</span>iPhone</a>
+  </div>
+</div></div>
+
+<footer><div class="c">
+  <div>
+    <h4>Atención al socio</h4>
+    <p><strong>(011) 7079-0149</strong></p>
+    <p><strong>+54 9 11 6375-9026</strong></p>
+    <p>Lunes a viernes de 8 a 17 hs.</p>
+  </div>
+  <div>
+    <h4>Emergencias 24 hs</h4>
+    <p><strong>0800-333-1297</strong></p>
+    <p><strong>3754-7777</strong></p>
+  </div>
+  <div>
+    <h4>Soporte técnico de la app</h4>
+    <p><strong>sistemas@ucmq.com</strong></p>
+    <p>Problemas para ingresar, errores<br>o fallas en la videollamada.</p>
+  </div>
+  <div>
+    <h4>Casa central</h4>
+    <p>Mitre 1077, Adrogué</p>
+    <p>Burzaco · Lanús</p>
+  </div>
+  <div class="fnote" style="grid-column:1/-1">
+    El servicio de videoconsulta es prestado por Grupo Ayuda Médica a través de la aplicación Doctor en Casa · Convenios. No reemplaza la atención de urgencias ni emergencias médicas.
+  </div>
+</div></footer>
+</div>
+
+<script>
+(function(){
+  var root = document.querySelector('.sami-tm');
+  if(!root) return;
+  var qas = root.querySelectorAll('.qa');
+  qas.forEach(function(d){
+    d.querySelector('button').addEventListener('click', function(e){
+      e.preventDefault();
+      var wasOpen = d.hasAttribute('open');
+      qas.forEach(function(o){ o.removeAttribute('open'); });
+      if(!wasOpen) d.setAttribute('open','');
+    });
+  });
+})();
+</script>
