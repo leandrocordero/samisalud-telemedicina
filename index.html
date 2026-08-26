@@ -33,7 +33,8 @@ h3{font-family:var(--d);font-weight:600;text-transform:uppercase;font-size:19px;
 
 /* placeholder token */
 .todo{background:var(--todo-bg);border-bottom:2px solid var(--todo-line);color:var(--todo);
-  font-weight:700;padding:1px 7px;border-radius:3px;font-size:.93em;white-space:nowrap}
+  font-weight:700;padding:1px 7px;border-radius:3px;font-size:.93em;
+  white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 
 /* ---------- site chrome ---------- */
 .topbar{background:var(--blue);color:#fff;font-size:14px;font-weight:600;padding:9px 0}
@@ -147,6 +148,12 @@ section{padding:66px 0}
 .qa .a{padding:0 0 22px;font-size:16.5px;color:var(--ink-2);max-width:74ch;display:none}
 .qa[open] .a{display:block}
 .qa .a p{margin:0 0 11px}.qa .a p:last-child{margin:0}
+.qa .a a{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.qa .a a:hover{color:var(--green-dk)}
+.qa .a ul.prov{margin:0 0 13px;padding:0;list-style:none}
+.qa .a ul.prov li{position:relative;padding:0 0 0 18px;margin-bottom:14px;font-size:16px;color:var(--ink-2);line-height:1.5}
+.qa .a ul.prov li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.qa .a ul.prov li:last-child{margin-bottom:0}
 button:focus-visible,a:focus-visible{outline:3px solid var(--green);outline-offset:2px;border-radius:3px}
 
 /* CTA */
@@ -395,10 +402,15 @@ footer strong{color:#fff}
       <details class="qa">
         <summary style="list-style:none"><button type="button">¿Quién más puede ver mi información?</button></summary>
         <div class="a">
-          <p>Para funcionar, el servicio se apoya en dos proveedores de tecnología:</p>
-          <p><strong>Amazon Web Services</strong> provee los servidores donde funciona la aplicación y donde quedan guardadas tus consultas. Es la misma infraestructura que usan bancos, organismos públicos y buena parte de las empresas del país.</p>
-          <p><strong>Twilio</strong> es la plataforma que transporta la videollamada, es decir el canal por el que viajan la imagen y el audio entre vos y el médico.</p>
-          <p>Los dos son prestadores técnicos: procesan la información únicamente para que el servicio funcione y no la usan para fines propios. Tus datos no se venden, no se ceden con fines comerciales y no se comparten con anunciantes.</p>
+          <p>Para funcionar, el servicio comparte datos con dos proveedores:</p>
+          <ul class="prov">
+            <li><strong>Amazon Web Services (AWS)</strong> — provee los servidores donde funciona la aplicación y donde quedan guardadas tus consultas, con servidores en Estados Unidos. Es la misma infraestructura que usan bancos, organismos públicos y buena parte de las empresas del país.<br>
+            <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener">Aviso de Privacidad</a> · <a href="https://aws.amazon.com/service-terms/" target="_blank" rel="noopener">Términos del Servicio</a></li>
+            <li><strong>Twilio</strong> — plataforma de comunicaciones que transporta la videollamada, es decir el canal por el que viajan la imagen y el audio entre vos y el médico, con servidores en Estados Unidos.<br>
+            <a href="https://www.twilio.com/legal/privacy" target="_blank" rel="noopener">Aviso de Privacidad</a> · <a href="https://www.twilio.com/legal/tos" target="_blank" rel="noopener">Términos del Servicio</a></li>
+          </ul>
+          <p>Estos proveedores actúan como <strong>encargados del tratamiento</strong>: procesan la información únicamente para que el servicio funcione, no la usan para fines propios y están obligados a protegerla conforme a los acuerdos de tratamiento de datos que forman parte de sus términos de servicio.</p>
+          <p>Tus datos no se venden, no se ceden con fines comerciales y no se comparten con anunciantes.</p>
         </div>
       </details>
 
