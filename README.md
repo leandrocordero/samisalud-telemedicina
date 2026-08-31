@@ -9,23 +9,33 @@ Médica).
 | Ruta | Qué es |
 |---|---|
 | `index.html` | La página completa, autónoma. Se abre en cualquier navegador. |
+| `privacidad.html` | Política de privacidad completa del servicio, enlazada desde las preguntas frecuentes. |
 | `imagenes/` | Capturas de la app (iOS) y logo. |
 | `wordpress/telemedicina-wordpress.html` | La misma página como bloque HTML para pegar en WordPress, con el CSS acotado bajo `.sami-tm`. |
+| `wordpress/privacidad-wordpress.html` | La política de privacidad como bloque HTML para WordPress, con el CSS acotado bajo `.sami-lg`. |
 | `wordpress/LEEME.txt` | Instrucciones paso a paso para montarla en WordPress. |
 
 ## Estado
 
 **Borrador. No publicar todavía.**
 
-Quedan tres datos por completar, marcados en amarillo dentro de la página
-(buscar `class="todo"`):
+No quedan datos en amarillo. Los tres pendientes originales de la página de
+telemedicina están resueltos: el fundamento del art. 12 de la Ley 25.326, el
+plazo de conservación (Ley 26.529, art. 18: diez años) y el responsable de la
+base de datos, más el link a `privacidad.html`.
 
-1. Confirmar con asesoría legal que los términos y condiciones que el socio
-   acepta al registrarse incluyan el consentimiento para la transferencia
-   internacional de datos sensibles (Ley 25.326, art. 12). Los servidores de
-   AWS y Twilio están en Estados Unidos.
-2. Plazo de conservación de las consultas y responsable de la base de datos.
-3. Link a la política de privacidad completa.
+El responsable declarado es **Grupo Ayuda Médica A.C.E.**, CUIT 30-71113973-3,
+domicilio legal en Sarmiento 4260, CABA.
+
+Antes de publicar hay que **confirmar con asesoría legal** dos textos que se
+afirman en la página y en la política:
+
+- Que los términos y condiciones que el socio acepta al registrarse incluyan
+  efectivamente el consentimiento expreso para la transferencia internacional
+  de datos sensibles (Ley 25.326, art. 12). Los servidores de AWS y Twilio
+  están en Estados Unidos.
+- Que Grupo Ayuda Médica sea el responsable de la base de datos declarado,
+  y no SamiSalud o una figura compartida entre ambos.
 
 ## Notas sobre las capturas
 

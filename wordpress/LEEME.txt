@@ -4,6 +4,8 @@ CÓMO SUBIR LA PÁGINA A WORDPRESS
 Contenido de este paquete
 -------------------------
   telemedicina-wordpress.html   El código para pegar en la página.
+  privacidad-wordpress.html     El código de la política de privacidad,
+                                que va en una segunda página.
   imagenes/                     Las 9 capturas y el logo.
   preview.html                  Para ver cómo queda antes de subir nada.
                                 Abrilo en el navegador; simula el header
@@ -55,35 +57,64 @@ Páginas > Añadir nueva. Ponele un título (por ejemplo
 Guardá como borrador y usá "Vista previa" antes de publicar.
 
 
-PASO 4 — Revisar antes de publicar
+PASO 4 — Crear la página de política de privacidad
+--------------------------------------------------
+Las preguntas frecuentes enlazan a la política de privacidad completa,
+así que hay que crear una segunda página.
+
+Páginas > Añadir nueva, con el título "Política de privacidad".
+Pegá adentro TODO el contenido de privacidad-wordpress.html, igual que
+en el paso 3 (bloque "HTML personalizado", widget HTML de Elementor o
+pestaña "Texto" del editor clásico).
+
+Antes de guardar, fijate el enlace permanente que le pone WordPress.
+Tiene que quedar así:
+
+    https://www.samisalud.com/politica-de-privacidad/
+
+Si te queda otro, tenés dos opciones: cambiarlo desde "Enlace permanente"
+para que sea "politica-de-privacidad", o abrir
+telemedicina-wordpress.html y reemplazar /politica-de-privacidad/ por la
+dirección que te haya quedado (es 1 sola aparición).
+
+Lo mismo al revés: adentro de privacidad-wordpress.html hay un enlace
+"Volver a la página de telemedicina" que apunta a /telemedicina/.
+Cambialo por la dirección real de la página del paso 3.
+
+
+PASO 5 — Revisar antes de publicar
 ----------------------------------
   [ ] Se ven las 9 imágenes (si alguna sale rota, la ruta del paso 2
       quedó mal).
   [ ] Las preguntas frecuentes abren y cierran al hacerles clic.
   [ ] Se ve bien en el celular.
   [ ] Los botones de descarga llevan a Play Store y App Store.
-  [ ] Quedan 3 avisos en amarillo pendientes de completar (ver abajo).
+  [ ] El link "política de privacidad completa" de la última pregunta
+      abre la página del paso 4, y el "Volver" de esa página trae de
+      vuelta a telemedicina.
+  [ ] No queda ningún aviso en amarillo en el texto.
 
 
 PENDIENTES ANTES DE PUBLICAR
 ----------------------------
-En el texto hay 3 recuadros amarillos con datos que faltan. Buscá la
-palabra "todo" en el archivo, o el color amarillo en la vista previa:
+Ya no quedan recuadros amarillos: los datos del responsable están
+completos (Grupo Ayuda Médica A.C.E., CUIT 30-71113973-3, Sarmiento 4260,
+CABA).
 
-  1. Confirmar con asesoría legal que los términos y condiciones que el
-     socio acepta al registrarse incluyan el consentimiento para la
-     transferencia internacional de datos (Ley 25.326, art. 12).
-  2. Cuánto tiempo se conservan las consultas y quién es el responsable
-     de la base de datos.
-  3. Link a la política de privacidad completa.
+Dos textos que se afirman en la página y en la política tienen que pasar
+por asesoría legal antes de publicar:
 
-No publiques con los amarillos a la vista: o se completan, o se borra
-ese párrafo.
+  · Que los términos y condiciones que el socio acepta al registrarse
+    incluyan el consentimiento expreso para la transferencia
+    internacional de datos sensibles (Ley 25.326, art. 12).
+  · Que el responsable de la base de datos sea Grupo Ayuda Médica, y no
+    SamiSalud o una figura compartida entre los dos.
 
 
 NOTAS TÉCNICAS
 --------------
-· Todo el CSS está encerrado bajo la clase .sami-tm, así que no le pisa
+· Todo el CSS está encerrado bajo una clase propia —.sami-tm en la página
+  de telemedicina, .sami-lg en la de privacidad—, así que no le pisa
   estilos al resto del sitio.
 · La página no incluye barra de teléfono ni logo arriba: eso ya lo pone
   el tema de SAMI.
