@@ -1,0 +1,30 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",      "title": "Carrusel 1 · Portada",        "x": 0,    "y": 0,    "w": 1080, "h": 1350 },
+    { "file": "Paso1.dc.html",     "title": "Carrusel 2 · Paso 1",         "x": 1180, "y": 0,    "w": 1080, "h": 1350 },
+    { "file": "Paso2.dc.html",     "title": "Carrusel 3 · Paso 2",         "x": 2360, "y": 0,    "w": 1080, "h": 1350 },
+    { "file": "Paso3.dc.html",     "title": "Carrusel 4 · Paso 3",         "x": 3540, "y": 0,    "w": 1080, "h": 1350 },
+    { "file": "Paso4.dc.html",     "title": "Carrusel 5 · Paso 4",         "x": 4720, "y": 0,    "w": 1080, "h": 1350 },
+    { "file": "Cierre.dc.html",    "title": "Carrusel 6 · Paso 5 y cierre","x": 5900, "y": 0,    "w": 1080, "h": 1350 },
+
+    { "file": "Historia1.dc.html", "title": "Historia 1 · El beneficio",   "x": 0,    "y": 1550, "w": 1080, "h": 1920 },
+    { "file": "Historia2.dc.html", "title": "Historia 2 · Qué consultar",  "x": 1180, "y": 1550, "w": 1080, "h": 1920 },
+    { "file": "Historia3.dc.html", "title": "Historia 3 · Receta digital", "x": 2360, "y": 1550, "w": 1080, "h": 1920 },
+    { "file": "ReelA.dc.html",     "title": "Portada de reel A · Tutorial","x": 3540, "y": 1550, "w": 1080, "h": 1920 },
+    { "file": "ReelB.dc.html",     "title": "Portada de reel B · Gancho",  "x": 4720, "y": 1550, "w": 1080, "h": 1920 },
+
+    { "file": "Feed1.dc.html",     "title": "Feed 1 · Anuncio",            "x": 0,    "y": 3620, "w": 1080, "h": 1080 },
+    { "file": "Feed2.dc.html",     "title": "Feed 2 · Horarios",           "x": 1180, "y": 3620, "w": 1080, "h": 1080 }
+  ],
+  "annotations": [
+    { "id": "fila-carrusel", "x": -440, "y": 30, "w": 360,
+      "text": "CARRUSEL — 1080×1350\n\nSeis placas en orden: la portada engancha y las cinco siguientes son el paso a paso para sacar turno." },
+    { "id": "fila-historias", "x": -440, "y": 1580, "w": 360,
+      "text": "HISTORIAS Y REELS — 1080×1920\n\nLas tres primeras son historias sueltas, no una secuencia: se pueden publicar en días distintos.\n\nReel A y Reel B son portadas: la imagen de tapa del reel, el video lo grabás aparte." },
+    { "id": "zona-segura", "x": -440, "y": 2320, "w": 360,
+      "text": "Dejé 268 px libres arriba y unos 300 abajo en las historias, para que el nombre de la cuenta y la barra de responder no tapen el texto.\n\nEn las portadas de reel el gancho está en la franja del medio, que es lo que se ve en la grilla del perfil." },
+    { "id": "fila-feed", "x": -440, "y": 3650, "w": 360,
+      "text": "FEED — 1080×1080\n\nDos placas sueltas: una de anuncio y otra de recordatorio de horarios." }
+  ],
+  "launch": { "view": "canvas" }
+}

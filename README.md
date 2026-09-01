@@ -14,6 +14,7 @@ Médica).
 | `wordpress/telemedicina-wordpress.html` | La misma página como bloque HTML para pegar en WordPress, con el CSS acotado bajo `.sami-tm`. |
 | `wordpress/privacidad-wordpress.html` | La política de privacidad como bloque HTML para WordPress, con el CSS acotado bajo `.sami-lg`. |
 | `wordpress/LEEME.txt` | Instrucciones paso a paso para montarla en WordPress. |
+| `instagram/` | Pack de 13 placas para Instagram (carrusel, historias, portadas de reel y feed) con su propio README. |
 
 ## Estado
 
