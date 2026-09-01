@@ -3,11 +3,27 @@
 Trece placas para la cuenta de Instagram de SamiSalud, sobre el servicio de
 videoconsulta. Usan la misma paleta, tipografías y textos que `index.html`.
 
-El lienzo donde se ven y se editan las placas está publicado acá:
+## Los archivos para subir
+
+Están en **`png/`**, a tamaño real y listos para publicar. Los nombres siguen
+el orden del carrusel, así que subiéndolos ordenados alfabéticamente queda
+bien la secuencia.
+
+Si editás una placa, regenerá los PNG con:
+
+    python exportar-png.py
+
+Abre cada placa en Chrome (o Edge) en modo headless y le saca una captura del
+tamaño exacto. Necesita Python y uno de esos dos navegadores instalado.
+
+## El lienzo para editar
+
+Las placas se editan visualmente acá:
 **https://claude.ai/code/artifact/16dccc72-a40e-4451-9b07-8d11d17eef7c**
 
-Desde ahí se exporta cada placa como PNG a 1080 px reales, o todas juntas
-como PDF.
+Ojo: lo que se edita ahí no vuelve solo al repo. Si cambiás algo en el lienzo,
+hay que bajar el cambio a los `.dc.html` de esta carpeta y volver a correr
+`exportar-png.py`.
 
 ## Las placas
 
